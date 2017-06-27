@@ -1,0 +1,43 @@
+{
+  "name": "sylow.js",
+  "version": "1.0.0",
+  "description": "Sylow client library for browsers and Node.js",
+  "main": "src/index.js",
+  "author": "Jacob Cook <jacob@peakwinter.net>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SylowTech/Sylow.js.git"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SylowTech/Sylow.js/issues"
+  },
+  "homepage": "https://github.com/SylowTech/Sylow.js#readme",
+  "engines": {
+    "node": ">=4.8.0",
+    "npm": ">=2.15.11",
+    "yarn": ">=0.20.3"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-2"
+    ],
+    "plugins": [
+      "add-module-exports",
+      "array-includes"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.1.1",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "^2.6.0",
+    "webpack": "^3.0.0"
+  }
+}
