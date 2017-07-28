@@ -1,14 +1,17 @@
+alert()
+let Sylow = {
+  constructor () {
+    this.domain = null;
+    this.isConnected = false;
+  },
 
-export default class Sylow {
+  Connection (options) {
+    this.isConnected = true;
+    this.domain = options.domain ? options.domain : null;
+  },
 
- constructor(options) {
-   
- }
-
-
- Connection(options) {
-   this.remote = options.domain ? options.domain : null;
- }
-
-
+  listEntities () {
+    
+  }
 }
+

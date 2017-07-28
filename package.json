@@ -24,8 +24,7 @@
       "stage-2"
     ],
     "plugins": [
-      "add-module-exports",
-      "array-includes"
+      "add-module-exports"
     ]
   },
   "devDependencies": {
