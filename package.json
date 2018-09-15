@@ -49,12 +49,14 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
+    "husky": "^0.14.3",
     "webpack": "^3.12.0"
   },
   "scripts": {
     "build": "gulp",
     "watch": "gulp nodemon",
-    "lint": "eslint lib"
+    "lint": "eslint lib",
+    "prepush": "npm run lint"
   },
   "dependencies": {
     "array-includes": "^3.0.3",
