@@ -50,13 +50,15 @@
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "husky": "^0.14.3",
+    "mocha": "^5.2.0",
     "webpack": "^3.12.0"
   },
   "scripts": {
     "build": "gulp",
     "watch": "gulp nodemon",
-    "lint": "eslint lib",
-    "prepush": "npm run lint"
+    "lint": "eslint lib test",
+    "prepush": "npm run lint && npm run test --colors",
+    "test": "mocha --require babel-core/register"
   },
   "dependencies": {
     "array-includes": "^3.0.3",
