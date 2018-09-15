@@ -39,9 +39,9 @@
     "babel-plugin-transform-es2015-template-literals": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
-    "eslint": "^4.1.1",
-    "eslint-config-airbnb-base": "7.1.0",
-    "eslint-plugin-import": "^2.6.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "gulp-babel": "^7.0.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-newer": "^1.4.0",
@@ -51,9 +51,10 @@
     "gulp-util": "^3.0.8",
     "webpack": "^3.12.0"
   },
-  "script": {
+  "scripts": {
     "build": "gulp",
-    "watch": "gulp nodemon"
+    "watch": "gulp nodemon",
+    "lint": "eslint lib"
   },
   "dependencies": {
     "array-includes": "^3.0.3",
