@@ -1,0 +1,16 @@
+const dotenv = require('dotenv').config();
+
+const Sylow = require('./dist/sylow').default;
+
+const srv = new Sylow().Connection({ 
+    domain: `${process.env.DOMAIN}:${process.env.PORT}`, 
+    authToken: process.env.AUTH_TOKEN 
+});
+
+
+srv.listEntities({ 
+    authoritative: true 
+}, entities => {
+    console.log('ent', entities[0]);
+});
+
